@@ -9,7 +9,7 @@
         <form action="/edit/{{post.id}}/" method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         <input type="text" name="name" placeholder="Name" value="{{post.name}}" style="/* width :89.7%; *//* margin-bottom: 10px; */border: 0px;width: 89.7%;background: #e6fef7;border-radius: 5px;margin-bottom: 10px;padding: 10px; font-size: 15px;">
-        <textarea name="body" placeholder="What's Happening?" required>{{post.body}}</textarea>
+        <textarea name="body" placeholder="What's Happening?" ></textarea>
         <label for={{post.name}}></label>
         
         {% if post.image.url %}
